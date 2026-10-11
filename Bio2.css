@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #080b14;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+.navbar {
+    padding: 25px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #60a5fa;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 9px 13px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #60a5fa;
+    background: #172554;
+}
+
+.hero {
+    text-align: center;
+    padding: 85px 8% 50px;
+}
+
+.tagline {
+    color: #60a5fa;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+    letter-spacing: -1.5px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.intro {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+.services {
+    padding: 35px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: linear-gradient(145deg, #111827, #0c1220);
+    border: 1px solid #263247;
+    border-radius: 16px;
+    padding: 30px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    list-style: none;
+}
+
+.service-card li {
+    color: #d1d5db;
+    font-size: 14px;
+    padding: 7px 0;
+}
+
+.service-card li::before {
+    content: "✓";
+    color: #60a5fa;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contact {
+    text-align: center;
+    padding: 70px 8%;
+    background: #0d1423;
+    border-top: 1px solid #1f2937;
+}
+
+.contact h2 {
+    font-size: clamp(27px, 4vw, 40px);
+    margin: 0 0 15px;
+}
+
+.contact > p:not(.tagline) {
+    max-width: 580px;
+    margin: 0 auto 25px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+}
+
+.back-link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    color: #93c5fd;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+.navigation-buttons {
+    justify-content: center;
+    padding: 0 8% 55px;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #3b82f6;
+    color: #ffffff;
+}
+
+.primary:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+.secondary {
+    border: 1px solid #374151;
+    color: #e5e7eb;
+}
+
+.secondary:hover {
+    border-color: #60a5fa;
+    color: #60a5fa;
+}
+
+footer {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #6b7280;
+    font-size: 11px;
+    border-top: 1px solid #1f2937;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 20px 6%;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .nav-links a {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 60px 6% 35px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        padding: 25px 6% 60px;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    .contact {
+        padding: 55px 6%;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+        padding: 0 6% 45px;
+    }
+
+    .navigation-buttons .button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

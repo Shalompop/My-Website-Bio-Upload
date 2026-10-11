@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #080b14;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+
+.navbar {
+    padding: 25px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #60a5fa;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 9px 13px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #60a5fa;
+    background: #172554;
+}
+
+main {
+    flex: 1;
+}
+
+.contact-hero {
+    text-align: center;
+    padding: 80px 8%;
+    background:
+        radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.16), transparent 45%),
+        #080b14;
+}
+
+.tagline {
+    color: #60a5fa;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.contact-hero h1 {
+    max-width: 850px;
+    margin: 0 auto 22px;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.contact-hero h1 span {
+    color: #60a5fa;
+}
+
+.intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    color: #9ca3af;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.contact-card {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 35px;
+    background: linear-gradient(145deg, #111827, #0c1220);
+    border: 1px solid #263247;
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #172554;
+    color: #60a5fa;
+    border-radius: 14px;
+    font-size: 28px;
+}
+
+.contact-card h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.contact-card > p {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background: #25d366;
+    color: #07110a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1fbd5b;
+    transform: translateY(-3px);
+}
+
+.contact-card .availability {
+    margin: 20px 0 0;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.availability::before {
+    content: "●";
+    color: #25d366;
+    margin-right: 8px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #3b82f6;
+    color: #ffffff;
+}
+
+.primary:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+.secondary {
+    border: 1px solid #374151;
+    color: #e5e7eb;
+}
+
+.secondary:hover {
+    border-color: #60a5fa;
+    color: #60a5fa;
+}
+
+footer {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid #1f2937;
+    color: #6b7280;
+    font-size: 11px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 20px 6%;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .nav-links a {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .contact-hero {
+        padding: 60px 6%;
+    }
+
+    .contact-hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .contact-card {
+        padding: 25px 20px;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+    }
+
+    .navigation-buttons .button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
